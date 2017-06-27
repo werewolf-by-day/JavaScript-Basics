@@ -8,6 +8,7 @@ function countdown();
       {
         console.log(i + " more days until my birthday...so sad.");
       }
+
       else if (i < 30 && i > 4);
       {
         console.log(i + " more days until my b-day!");
