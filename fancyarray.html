@@ -5,11 +5,11 @@
     <title>Fancy Array</title>
     <script>
 
-      function fancyArray() {
-        for(var i = 0; i <= fancyArray.length; i++) {
-        console.log(i + " -> " + fancyArray[i]);
+      function fancyArray(arr) {
+        for(var i = 0; i < arr.length; i++) {
+        console.log([i] + " -> " + arr[i]);
         }
-
+        return fancyArray;
       }
 fancyArray(["James", "Jill", "Jane", "Jack"])
 
