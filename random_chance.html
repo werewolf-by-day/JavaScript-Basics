@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Play the Slots! Test your Luck!</title>
+    <script>
+
+      function randomChance(num) {
+        var results = 1
+        num--;
+        while(num > 0) {
+          var pull = Math.floor((Math.random() * 99) + 1);
+          results = pull;
+          if (results == 7) {
+            num = num + Math.floor((Math.random() * 50) + 50);
+            console.log("Jackpot! You now have " + num + "quarters!");
+            num --;
+            results = pull;
+          } else {
+            num --;
+            results = pull;
+          }
+          }
+          console.log(num);
+      }
+randomChance(50)
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
